@@ -64,6 +64,37 @@
             0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
             100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
         }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+                letter-spacing: 0.3rem;
+            }
+            .tagline {
+                font-size: 1.2rem;
+            }
+            .neon-circle {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2rem;
+                letter-spacing: 0.2rem;
+                top: 10%;
+            }
+            .tagline {
+                font-size: 1rem;
+                bottom: 10%;
+            }
+            .neon-circle {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
