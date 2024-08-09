@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Engineering</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(45deg, #000 25%, #0a0a0a 25%, #0a0a0a 50%, #000 50%, #000 75%, #0a0a0a 75%, #0a0a0a 100%);
+            background-size: 40px 40px;
+            animation: backgroundSlide 20s linear infinite;
+        }
+        @keyframes backgroundSlide {
+            0% { background-position: 0 0; }
+            100% { background-position: 40px 40px; }
+        }
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 0;
+            color: #f0f;
+            letter-spacing: 0.2rem;
+            text-transform: lowercase;
+        }
+        .neon-circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #f0f;
+            opacity: 0.5;
+            animation: pulse 4s ease-in-out infinite alternate;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(1.2); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentient Engineering</h1>
+        <p>ai. sentient.</p>
+        <div class="neon-circle"></div>
+    </div>
+</body>
+</html>
